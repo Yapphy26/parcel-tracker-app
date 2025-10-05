@@ -1,0 +1,10 @@
+
+.data-\[state\=open\]\:animate-accordion-down[data-state="open"] {
+  animation-duration: 0.7s !important;
+  animation-timing-function: cubic-bezier(0.6, 0.1, 0.45, 1.35) !important;
+}
+
+.data-\[state\=closed\]\:animate-accordion-up[data-state="closed"] {
+  animation-duration: 0.5s !important;
+  animation-timing-function: cubic-bezier(0.40, 0, 0.4, 1) !important;
+}
