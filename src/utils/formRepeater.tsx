@@ -31,14 +31,13 @@ type SortableItemProps = {
 function removeScaleY(transform: Transform | null) {
   if (!transform) return undefined;
   // Clone the transform and set scaleY to 1 (neutral)
-  const { scaleY, ...rest } = transform;
+  const { ...rest } = transform;
   return CSS.Transform.toString({ ...rest, scaleY: 1 });
 }
 
 export function FormRepeater<T extends { id: string; }>({
   items,
   onAdd,
-  onRemove,
   onReorder,
   children,
 }: FormRepeaterProps<T>) {

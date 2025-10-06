@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -17,6 +17,11 @@ import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 // Motion
 import * as motion from "motion/react-client"
+
+export const metadata = {
+  title: "ParcelOTW | About",
+  description: "About ParcelOTW"
+};
 
 export const contactInfo = [
   {

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 // Types
-import { TrackingField, TrackingResponse } from "@/types/tracking";
+import { TrackingField } from "@/types/tracking";
 
 // Utils
 import { apiAuth, postAPI } from "@utils/tracking";
@@ -11,7 +11,7 @@ type TrackingFieldWithExisting = TrackingField & {
 };
 
 type AllTrackingsResponse = {
-  meta: any;
+  meta: unknown;
   data: TrackingFieldWithExisting[];
 };
 
@@ -161,14 +161,8 @@ export async function POST(req: Request) {
   }
 
   const newTrackingData = (await detectCourierCode(trackingData)) as TrackingField[];
-  if ((newTrackingData as any)?.error) {
-    return NextResponse.json({ error: (newTrackingData as any).error }, { status: (newTrackingData as any).status || 500 });
-  }
 
   const mixedTrackingData = (await checkExistingTracking(newTrackingData)) as TrackingFieldWithExisting[];
-  if ((mixedTrackingData as any)?.error) {
-    return NextResponse.json({ error: (mixedTrackingData as any).error }, { status: (mixedTrackingData as any).status || 500 });
-  }
 
   const createdTrackingData = await createNewTrackings(mixedTrackingData);
   if (createdTrackingData.error) {

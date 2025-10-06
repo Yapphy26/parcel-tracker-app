@@ -7,7 +7,7 @@ import { TrackingField } from "@/types/tracking";
 import { apiAuth, postAPI } from "@utils/tracking";
 
 type AllTrackingsResponse = {
-  meta: any;
+  meta: unknown;
   data: TrackingField[];
 };
 

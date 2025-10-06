@@ -18,7 +18,7 @@ export type TrackingItem = {
 };
 
 export type TrackingResponse = {
-  meta?: any;
+  meta?: unknown;
   data?: TrackingItem[];
 };
 

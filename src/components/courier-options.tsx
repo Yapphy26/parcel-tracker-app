@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/select";
 
 interface Props {
-  isDisabled?: Boolean;
+  isDisabled?: boolean;
   value: string;
   onChange: (val: string) => void;
 }

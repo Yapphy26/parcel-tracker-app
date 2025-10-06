@@ -210,7 +210,7 @@ export function TrackingForm() {
             <form>
               <FormRepeater
                 items={fields}
-                onAdd={(totalFields) => {
+                onAdd={() => {
                   if (fields.length === maxFields) {
                     setFormError(`Maximum of ${maxFields} fields allowed`);
                     return;
@@ -222,7 +222,7 @@ export function TrackingForm() {
                   });
                   setTrackingFieldError([...trackingFieldError, ""]);
                 }}
-                onRemove={(index) => {
+                onRemove={() => {
                   setFormError("");
                 }}
                 onReorder={(oldIndex, newIndex) => {
