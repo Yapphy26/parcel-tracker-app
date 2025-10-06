@@ -38,12 +38,12 @@ By combining performance-driven architecture with thoughtful UI/UX principles, P
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/Yapphy26/parcelotw.git
+    git clone https://github.com/Yapphy26/parcel-tracker-app.git
     ```
 
 2. Go into the project
     ```bash
-    cd parcelotw
+    cd parcel-tracker-app
     ```
 
 3. Install dependencies
@@ -64,7 +64,7 @@ By combining performance-driven architecture with thoughtful UI/UX principles, P
 
 8. Copy the key (you can also download the JSON file as a backup in case you forget it).
 
-9. Back to the root of the `parcelotw` project, create a file named **`.env.local`**.
+9. Back to the root of the `parcel-tracker-app` project, create a file named **`.env.local`**.
 
 10. Add your API key (replace `YOUR_API_KEY`):
 
