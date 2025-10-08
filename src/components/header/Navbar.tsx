@@ -42,7 +42,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className="fixed top-0 w-full h-[65px] flex justify-between items-center border-b backdrop-blur-xs px-5 py-3 z-1">
+    <nav className="fixed top-0 w-full h-[65px] flex justify-between items-center border-b backdrop-blur-xs px-5 py-3 z-[100]">
       <div className="logo-div flex gap-3 items-center">
         <Link href={"/"}>
           <Image className="w-[65px] md:w-[81px]" src="/images/logos/logo-parcelotw.png" alt="Logo" width={96} height={49} priority />
