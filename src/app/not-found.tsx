@@ -1,5 +1,3 @@
-"use client";
-
 import FuzzyText from "@components/ui/FuzzyText";
 
 export default function NotFound() {

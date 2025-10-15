@@ -1,5 +1,3 @@
-// "use client";
-
 // Components
 import { TrackingForm } from "@components/tracking-form";
 
