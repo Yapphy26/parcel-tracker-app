@@ -30,7 +30,7 @@ type TrackingFormResult = {
 
 export function ResultSection({ trackingData, errorData, setTrackingData }: TrackingFormResult) {
   const [page, setPage] = useState(1);
-  const pageSize = 2;
+  const pageSize = 6;
   const [pagedData, setPagedData] = useState(
     Array.isArray(trackingData?.data)
       ? trackingData!.data.slice((page - 1) * pageSize, page * pageSize)
