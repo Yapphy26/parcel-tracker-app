@@ -29,8 +29,8 @@ By combining performance-driven architecture with thoughtful UI/UX principles, P
 
 ### Prerequisites
 
-- Next.js (v15.5.2 or later)
-- Node.js (v18.18.0 or later)
+- Next.js (v16.1.1 or later)
+- Node.js (v24.12.0 or later)
 - npm or yarn
 
 ### Installation with TrackingMore API Setup 🔑
